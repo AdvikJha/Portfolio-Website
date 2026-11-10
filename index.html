@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Advik Jha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="headerNameTag">
+            <div id="headerLogo">
+                <h2 id="headerLogoText">>_</h2>
+            </div>
+            <h1 id="headerName">Advik Jha</h1>
+        </div>
+        <div id="headerNavigationBar">
+            <button id="headerNavBarHomeButton" class="NavButton HeaderNavButton" onclick="goToPage('Home')">Home</button>
+            <button id="headerNavBarAboutButton" class="NavButton HeaderNavButton" onclick="goToPage('About')">About</button>
+            <button id="headerNavBarProjectsButton" class="NavButton HeaderNavButton" onclick="goToPage('Projects')">Projects</button>
+        </div>
+        <div id="headerNavigationButtonPhone" onclick="openMenuSidebar()">☰</div>
+    </div>
+    <div id="content">
+        <div id="HomePage">
+            <div id="HomePageTextHalf">
+                <h1 id="HomePageLabel">Machine Learning | Development | Engineering</h1>
+                <h1 id="HomePageName">Engineering Student, Advik Jha</h1>
+                <h2 id="HomePageParagraph">From making neural networks from scratch to programming websites, I am passionate about learning concepts in engineering and technology.</h2>
+                <button id="HomePageToProjectButton" onclick="goToPage('Projects')">Explore my work</button>
+                <button id="HomePageToAboutButton" onclick='goToPage("About")'>About Me</button>
+            </div>
+            <div id="HomePageBlankHalf"></div>
+        </div>
+
+        <div id="AboutPage">
+            <h1 id="AboutMeHeader" class="AboutHeader">About Me</h2>
+            <p id="AboutMeText" class="AboutParagraph">I'm Advik Jha, a high school engineering student. I'm interested in computer science, artificial intelligence, and development. I enjoy making projects that help me learn more about technology.</p>
+            <h1 id="TechnicalInterestsHeader" class="AboutHeader">Technical Interests</h1>
+            <ul id="TechnicalInterestsList">
+                <li><b>Machine Learning:</b> I enjoy learning about neural networks, back propagation, gradient descent, and the math for Machine Learning. I hope to eventually be able to program and train my own Large Language Model from scratch.</li>
+                <li><b>Web Development:</b> I have developed several websites in HTML, CSS, and JavaScript, including this one. I am currently taking classes at my local community college to improve my skills in web development.</li>
+                <li><b>Robotics:</b> I enjoy working with circuits and making actuators do what I design them to with my code.</li>
+                <li><b>3D Design:</b> I have experience with Fusion360 and Inventor for 3D designing. For most of my circuit enclosures I use Fusion to design precise pieces to print.</li>
+            </ul>
+            <h1 id="TechnicalBackgroundHeader" class="AboutHeader">Technical Experience</h1>
+            <ul id="TechnicalBackgroundList">
+                <li><b>Programming:</b> I have been coding since I was just 7 years old. In that time, I have learned HTML, CSS, JavaScript, Luau, Python, C++, and C.</li>
+                <li><b>Web Development:</b> I programmed my first website in 2025 for a STEM based nonprofit near me. Still today, I am learning more about web development through community college.</li>
+                <li><b>Hardware:</b> At my high school, I am taking a class for electricity and circuits. Along side that, I'm doing simple projects on my own with arduinos and other microcontrollers.</li>
+                <li><b>Math:</b> at my high school, I am taking AP Calculus BC along with 0.7% of sophomores in my school. Additionally, I am teaching myself other higher level math courses using online resources like Khan Academy.</li>
+            </ul>
+            <h1 id="OutsideEngineeringHeader" class="AboutHeader">Outside Engineering</h1>
+            <p id="OutsideEngineeringParagraph" class="AboutParagraph">Other than engineering, I am also the CFO and web developer for EpiSTEM Learning. We are a STEM education nonprofit based in Kern County. Every week we go into elementary schools and teach hands on science labs to students. We believe it is important to do this to make sure the next generation has the same passion for STEM we have.</p>
+            <h1 id="CurrentlyLearningHeader" class="AboutHeader">Learning Now: </h1>
+            <ul id="CurrentlyLearningList">
+                <li>AP Calculus BC (MATH B6A & MATH B6B)</li>
+                <li>Digital Electronics (ELET B1A)</li>
+                <li>JavaScript for Web Development (COMP B43)</li>
+                <li>Programming Concepts and Methodology (COMP B11)</li>
+                <li>Computer Science (Harvard CS50x)</li>
+                <li>Elementary Linear Algebra (Self Studying)</li>
+                <li>Neural Networks and Language Models (Self Studying)</li>
+            </ul>
+            <div id="aboutPageLinks">
+                <button id="epistemLink" class="aboutPageButton" onclick="openLink('https:/\/epistemlearning.org')">EpiSTEM Learning</button>
+                <button id="generalGithubLink" class="aboutPageButton" onclick="openLink('https:/\/github.com/AdvikJha')">My GitHub Repositories</button>
+                <button id="emailLink" class="aboutPageButton" onclick="openLink('mailto:advikj84@gmail.com')" title="advikj84@gmail.com">My Email</button>
+            </div>
+        </div>
+
+        <div id="ProjectsPage">
+            <div id="EpistemProject" class="Project">
+                <div id="EpistemText" class="ProjectText">
+                    <h2 id="EpistemName" class="ProjectName">EpiSTEM Learning</h2>
+                    <h4 id="EpistemCaption" class="ProjectCaption">This is the website for EpiSTEM Learning, a Kern County based STEM Education nonprofit</h4>
+                    <div id="tags" class="tags">
+                        <h4 id="EpistemTag1" class="tag">Web Development</h4>
+                        <h4 id="EpistemTag2" class="tag">HTML</h4>
+                        <h4 id="EpistemTag3" class="tag">CSS</h4>
+                        <h4 id="EpistemTag4" class="tag">JavaScript</h4>
+                    </div>
+                </div>
+                <button id="EpistemSeeDetails" class="SeeDetails" onclick="openPopUp(Epistem)">See More Details</button>
+            </div>
+            
+            <div id="XOR" class="Project">
+                <div id="XORText" class="ProjectText">
+                    <h2 id="XORName" class="ProjectName">XOR Neural Network</h2>
+                    <h4 id="XORCaption" class="ProjectCaption">This is a simple 9 parameter neural network for the logic gate XOR.</h4>
+                    <div id="tags" class="tags">
+                        <h4 id="XORTag1" class="tag">Machine Learning</h4>
+                        <h4 id="XORTag2" class="tag">Neural Networks</h4>
+                        <h4 id="XORTag3" class="tag">Python</h4>
+                    </div>
+                </div>
+                <button id="XORSeeDetails" class="SeeDetails" onclick="openPopUp(XOR)">See More Details</button>
+            </div>
+            
+            <div id="Neuron" class="Project">
+                <div id="NeuronText" class="ProjectText">
+                    <h2 id="NeuronName" class="ProjectName">Linear Regression AI Neuron</h2>
+                    <h4 id="NeuronCaption" class="ProjectCaption">This is a 2 parameter AI Neuron that is designed to complete linear regression given two points.</h4>
+                    <div id="tags" class="tags">
+                        <h4 id="NeuronTag1" class="tag">Machine Learning</h4>
+                        <h4 id="NeuronTag2" class="tag">Neural Networks</h4>
+                        <h4 id="NeuronTag3" class="tag">Python</h4>
+                    </div>
+                </div>
+                <button id="NeuronSeeDetails" class="SeeDetails" onclick="openPopUp(Neuron)">See More Details</button>
+            </div>
+            
+            <div id="Portfolio" class="Project">
+                <div id="PortfolioText" class="ProjectText">
+                    <h2 id="PortfolioName" class="ProjectName">Portfolio Website</h2>
+                    <h4 id="PortfolioCaption" class="ProjectCaption">This is the website you're on right now, made to showcase myself and my work.</h4>
+                    <div id="tags" class="tags">
+                        <h4 id="PortfolioTag1" class="tag">Web Development</h4>
+                        <h4 id="PortfolioTag2" class="tag">HTML</h4>
+                        <h4 id="PortfolioTag3" class="tag">CSS</h4>
+                        <h4 id="PortfolioTag4" class="tag">JavaScript</h4>
+                    </div>
+                </div>
+                <button id="PortfolioSeeDetails" class="SeeDetails" onclick="openPopUp(Portfolio)">See More Details</button>
+            </div>
+            
+            <div id="Bit" class="Project">
+                <div id="BitText" class="ProjectText">
+                    <h2 id="BitName" class="ProjectName">Bit Desk Buddy</h2>
+                    <h4 id="BitCaption" class="ProjectCaption">Bit is a small companion to have by your side as you work, to help brighten up your workspace</h4>
+                    <div id="tags" class="tags">
+                        <h4 id="BitTag1" class="tag">Arduino</h4>
+                        <h4 id="BitTag2" class="tag">C++</h4>
+                    </div>
+                </div>
+                <button id="BitSeeDetails" class="SeeDetails" onclick="openPopUp(Bit)">See More Details</button>
+            </div>
+
+            <div id="Driving" class="Project">
+                <div id="DrivingText" class="ProjectText">
+                    <h2 id="DrivingName" class="ProjectName">Driving Arcade Simulator</h2>
+                    <h4 id="DrivingCaption" class="ProjectCaption">This is an arcade style driving simulator that you can connect to your computer to control a car in any video game using a steering wheel and pedals for a brake and an accelerator.</h4>
+                    <div id="tags" class="tags">
+                        <h4 id="DrivingTag1" class="tag">Arduino</h4>
+                        <h4 id="DrivingTag2" class="tag">C++</h4>
+                    </div>
+                </div>
+                <button id="DrivingSeeDetails" class="SeeDetails" onclick="openPopUp(Driving)">See More Details</button>
+            </div>
+        </div>
+    </div>
+    <div id="PopUpProject">
+        <h1 id="PopUpProjectTitle">EpiSTEM Learning</h1>
+        <div id="PopUpTags">
+          <h4 id="PopUpTag1" class="PopUpTag"></h4>  
+          <h4 id="PopUpTag2" class="PopUpTag"></h4>  
+          <h4 id="PopUpTag3" class="PopUpTag"></h4>  
+          <h4 id="PopUpTag4" class="PopUpTag"></h4>  
+          <h4 id="PopUpTag5" class="PopUpTag"></h4>  
+        </div>
+        <h2 id="PopUpDescriptionLabel">Description</h2>
+        <p id="PopUpDescription"></p>
+        <h2 id="PopUpPurposeLabel">Purpose</h2>
+        <p id="PopUpPurpose"></p>
+        <h2 id="PopUpP3Label"></h2>
+        <p id="PopUpP3"></p>
+        <h2 id="PopUpP4Label"></h2>
+        <p id="PopUpP4"></p>
+        <h2 id="PopUpP5Label"></h2>
+        <p id="PopUpP5"></p>
+        <button id="LinkToGithubButton" onclick="openGithubLink()">See the GitHub Repository</button>
+        <button id="PopUpX" onclick="closePopUp()">X</button>
+    </div>
+    <div id="sidebar">
+        <button id="headerNavBarHomeButton" class="NavButton HeaderNavButton" onclick="goToPage('Home')">Home</button>
+        <button id="headerNavBarAboutButton" class="NavButton HeaderNavButton" onclick="goToPage('About')">About</button>
+        <button id="headerNavBarProjectsButton" class="NavButton HeaderNavButton" onclick="goToPage('Projects')">Projects</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
