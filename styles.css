@@ -123,7 +123,7 @@ button:active{
 #content{
     position: relative;
     box-sizing: border-box;
-    left: 2%;
+    left: 0;
     width: 98%;
     top: 0;
     padding: 2%;
