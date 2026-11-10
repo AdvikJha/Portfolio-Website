@@ -10,6 +10,7 @@ body{
     justify-content: center;
     align-items: baseline;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 button{
@@ -25,7 +26,7 @@ button:active{
 }
 
 #header{
-    width: 99vw;
+    width: 97vw;
     height: 12.5vh;
     position: relative;
     top: 0;
@@ -42,7 +43,6 @@ button:active{
 
 #headerNameTag{
     position: relative;
-    left: 1%;
     width: 0;
     height: 80%;
     display: flex;
@@ -123,8 +123,7 @@ button:active{
 #content{
     position: relative;
     box-sizing: border-box;
-    left: 0;
-    width: 98%;
+    width: 100%;
     top: 0;
     padding: 2%;
     margin: 10px;
@@ -179,12 +178,6 @@ button:active{
     border-radius: 10px;
     height: 7vh;
     font-size: 3cqh;
-}
-
-@media (max-width: 600px){
-    #content{
-        left: 4%
-    }
 }
 
 @media (max-width: 800px){
@@ -403,4 +396,32 @@ li{
     left: 0px;
     top: 18vh;
     background-color: #36454F;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: stretch;
+    overflow-x: hidden;
+}
+
+#header {
+    width: 100%;
+    left: 0;
+    margin: 0;
+}
+
+#content {
+    width: 100%;
+    left: 0;
+    margin: 0;
 }
