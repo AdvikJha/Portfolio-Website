@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://advikjha.com/sitemap.xml
